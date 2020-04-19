@@ -1,0 +1,33 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrapper {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+.item {
+  flex: 1;
+  height: 100px;
+  width: 100px;
+  font-size: 15px;
+  line-height: 2;
+}
+.item:first-child {
+  background: #000;
+}
+.item:last-child {
+  background: #666;
+}
+
+.father {
+  font-size: 12px;
+  line-height: 150%;
+  width: 300px;
+}
+.son {
+  font-size: 60px;
+}

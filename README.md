@@ -15,10 +15,13 @@
    D. 把多张图片合并成一张背景图片
 
 3. 如果要使一幅图像在网页中居中显示，应使用一下语句
+
+```
    A． <div align="center"><img  src="image.gif"></div>
    B. <img  src="image.png"  align="center">
    C. <img  src="image.jpg"  align="middle">
    D. <img  src="image.jpg"  verticalAlign="center">
+```
 
 4. 以下哪个是对的?
 

@@ -236,3 +236,105 @@ console.log(accumulateCurry("hello", "world")); // hello world
 2. 为什么使用 class 组件，调用 super(props) 的目的是什么?
 
 3. 你对受控组件和非受控组件了解多少？
+
+——————————————————————————————————————————————————————————————————————————————
+
+1. 前端模块化有哪些? ABCD
+   A. AMD
+   B. CommonJS
+   C. CMD
+   D. UMD
+
+2. ES6 模块与 CommonJS 模块描述正确的是? A
+   A. CommonJS 模块输出的是值的拷贝
+   B. ES6 Modules 的运行机制与 CommonJS 是类似的
+   C. ES6 模块导出的值，在外部进行改变了，也不会影响到这个值
+   D. CommonJS 导出的值，模块内部的变化会影响到这个值
+
+3. 删除数组中的最后一个元素，需要调用哪个方法? D
+   A.sort 方法
+   B.push () 方法
+   C.unshift () 方法
+   D.pop () 方法
+
+4. 以下哪个选项可以对元素定义不同的过渡动画效果? A
+   A.animations 属性
+   B.transform 属性
+   C.position 属性
+   D.transitions 属性
+
+5. 将删除指定元素的子节点，并返回被删除的节点对象，使用哪个方法? D
+   A.spliceChild 方法
+   B.remove 方法
+   C.appendChild 方法
+   D.removeChild 方法
+
+6. 下列关于 SVG 的说法，不正确的是？ ACD
+   A.SVG 图像可通过文本编辑器来创建和修改
+   B.SVG 是可伸缩的
+   C.SVG 可在图像质量不下降的情况下被放大
+   D.SVG 不能被压缩
+
+7. 页面上有 10 个类名为 list 的 div 节点根据以下代码，代码输出正确的是? B
+
+```
+var oEls = document.querySelectorAll(".list");
+for(var i=0;i<oEls.length;i++){
+   oEls[i].onclick = function(){
+      console.log(i);
+   }
+}
+```
+
+A. 当点击第一个节点时输入为 1
+B. 当点击每个节点时都输入为 10
+C. 当点击每个节点时都输入为 9
+D. 当点击最后一个节点时输入为 9
+
+8. 以下描述事件委托正确的是? B
+   A. 事件委托是利用事件的捕获原理来实现的
+   B. 动态绑定事件
+   C. focus 与 click 可以使用事件委托
+   D. currentTarget 当前触发事件的元素
+
+9. 哪些事件不能使用事件委托? AC
+   A. focus
+   B. mouseout
+   C. blur
+   D. keypress
+
+10. promise 的状态与 catch 描述正确的是? B
+    A. promise 有三种状态，分别为 pending、resolve、reject
+    B. 当状态为 rejected 时，会进入 catch
+    C. 当 promise 状态为 fulfilled 时，还可以变为 rejected
+    D. promise 有两种状态，分别为 resolve、reject
+
+11. Promise 中 reject 和 catch 处理上描述不正确的是? C
+    A. reject 是用来抛出异常，catch 是用来处理异常
+    B. reject 是 Promise 的方法，而 catch 是 Promise 实例的方法
+    C. reject 后的会进入 then 中的第二个回调，然后再进入 catch
+    D. 网络异常（比如断网），会直接进入 catch 而不会进入 then 的第二个回调
+
+12. forEach、for in、for of 三者的描述正确的是? B
+    A. forEach 执行遍历后可以使用 return 中断遍历
+    B. for in 可以遍历对象，并且可以获取到遍历原型链上的所有属性
+    C. for of 也可以直接遍历对象
+    D. for of 不能遍历 Map 对象
+
+13. npm 描述正确的是? ABCD
+    A. 允许用户从 NPM 服务器下载别人编写的第三方包到本地使用
+    B. NPM 是随同 NodeJS 一起安装的包管理工具
+    C. 全局安装为 npm install <Module Name> -g
+    D. 更新模块为 npm up <Module Name>
+
+14. Webpack 描述正确的是? A
+    A. Webpack 的工作方式是：把你的项目当做一个整体，通过一个给定的主文件（如：index.js），Webpack 将从这个文件开始找到你的项目的所有依赖文件，使用 loaders 处理它们，最后打包为一个浏览器可识别的 JavaScript 文件。
+    B. Webpack 的工作方式是：在一个配置文件中，指明对某些文件进行类似编译，组合，压缩等任务的具体步骤，这个工具之后可以自动替你完成这些任务。
+    C. webpack 之 loader 加载顺序为从左到右
+    D. webpack 的 externals 配置后可以不在项目进行 import 也可以使用已配置的包
+
+15. react 中如何更新状态? C
+    A. 对 state 进行赋值
+    B. 对 props 的属性进行赋值
+    C. 使用 setState 设置值
+    D. 使用 setData 设置值
